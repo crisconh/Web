@@ -31,6 +31,22 @@ gsap.to(".hero-bg-txt", {
   duration: 2,
 });
 
+const videos = gsap.utils.toArray('video')
+
+videos.forEach(function(video, i) {
+    
+  ScrollTrigger.create({
+    trigger: video,
+    start: 'top center',
+    end: 'bottom center',
+    onEnter: () => video.play(),
+    onEnterBack: () => video.play(),
+    onLeave: () => video.pause(),
+    onLeaveBack: () => video.pause(),
+  });
+  
+})
+
 //CODE FOR THE CARROUSEL
 
 var swiper = new Swiper(".mySwiper", {

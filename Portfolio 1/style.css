@@ -99,12 +99,24 @@ body {
   opacity: 0;
 }
 
+.section-2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .line {
   width: 1px;
   min-height: 120px;
   background-color: black;
 }
-
+.artwork-wrapper{
+  width: 100vw;
+}
+.briefing{
+  max-width: 474px;
+  margin: 30px;
+}
 .swiper {
   width: 100%;
   height: 100%;
@@ -123,6 +135,13 @@ body {
   display: block;
   width: 100%;
   height: 100%;
+  object-fit: cover;
+}
+
+video{
+  width: 100%;
+  height: 100%;
+  padding: 10vh 0;
   object-fit: cover;
 }
 
