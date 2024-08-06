@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Christian Reyes</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <div class="page-wrapper">
@@ -32,7 +37,17 @@
       <div class="section-2 section-wrapper">
         <div class="separator"><div class="line"></div></div>
         <div class="briefing"></div>
-        <div class="artwork-wrapper slder"></div>
+        <div class="artwork-wrapper slder">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="sources/project-1.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="sources/project-2.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="sources/project-3.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="sources/project-1.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>

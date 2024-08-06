@@ -18,3 +18,28 @@ gsap.to(".separator", {
   opacity: 1,
   duration: 2,
 });
+
+gsap.to(".hero-bg-txt", {
+  scrollTrigger: {
+    trigger: ".section-1",
+    start: "top top",
+    end: "bottom top",
+    toggleAction: "play none none none",
+    scrub: 1,
+  },
+  x: 300,
+  duration: 2,
+});
+
+//CODE FOR THE CARROUSEL
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    enabled: false
+  },
+});
