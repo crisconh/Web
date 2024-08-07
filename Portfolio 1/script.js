@@ -31,6 +31,19 @@ gsap.to(".hero-bg-txt", {
   duration: 2,
 });
 
+gsap.from(".swiper", {
+  scrollTrigger: {
+    trigger: ".swiper",
+    start: "center bottom",
+    toggleAction: "play none none none",
+  },
+opacity: 0,
+y: 100,
+scale: 1.2,
+  duration: 1,
+  ease: "power1.out"
+});
+
 const videos = gsap.utils.toArray('video')
 
 videos.forEach(function(video, i) {
